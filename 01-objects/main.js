@@ -2,11 +2,11 @@ const riddle ={
   question: 'Висит груша нельзя скушать',
   correctAnswer: 'лампочка',
   tries: 3,
-  checkAnswer(answer) {
+  checkAnswer(str) {
     if (this.tries === 0) {
       alert('Упс, попытки закончились!')
       console.log('Упс, попытки закончились!')
-    } else if (answer.toLowerCase() === this.correctAnswer) {
+    } else if (str.toLowerCase() === this.correctAnswer) {
       alert('Ура, Вы угадали загадку!')
       console.log('Ура, Вы угадали загадку!')
     } else {
